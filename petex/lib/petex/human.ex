@@ -2,6 +2,8 @@ defmodule Petex.Human do
     use Ecto.Schema
     import Ecto.Changeset
 
+    alias Petex.Pet
+
     @fields [:age, :cpf, :email, :name]
 
     schema "humans" do
@@ -9,6 +11,8 @@ defmodule Petex.Human do
         field :cpf, :string
         field :email, :string
         field :name, :string
+
+        has_many :pets, Pet
 
         timestamps()
     end

@@ -5,7 +5,7 @@ config :petex, Petex.Repo,
   username: "solfacil",
   password: "solfacil",
   hostname: "localhost",
-  database: "petex_dev",
+  database: "petex_lol",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
